@@ -1,0 +1,23 @@
+<mvc:View
+	controllerName="projectevent.controller.masterPages"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+
+
+	<App >
+			<pages>
+				<Page title="{i18n>title}">
+					<content>
+                <Text text="masterView" />
+				<!-- <Button text="SplitApp" press="onMaster"/> -->
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	
+</mvc:View>

@@ -1,0 +1,48 @@
+<mvc:View
+	controllerName="projectevent.controller.detailPages"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+<App >
+		<pages>
+			<Page title="Title" >
+				<content  >
+				    <ObjectHeader title="{name}" intro="{health}" icon="{image}" number="{price}" numberUnit="{piece}"></ObjectHeader>
+						<IconTabBar>
+							<items>
+								<IconTabFilter text="Info" icon="sap-icon://hint">
+								<!-- <core:Fragment fragmentName="SA.SplitApp.fragments.FruitsPropertiespopUp" type="XML"></core:Fragment> -->
+								</IconTabFilter>
+								<IconTabFilter text="More Data" icon="sap-icon://search">
+							    <!-- <core:Fragment fragmentName="SA.SplitApp.fragments.dropdownOfpopUp"  type="XML" ></core:Fragment> -->
+									
+								</IconTabFilter>
+								<IconTabFilter text="Suppliers" icon="sap-icon://supplier">
+								<!-- <core:Fragment fragmentName="SA.SplitApp.fragments.SupplierpopUp" type="XML" ></core:Fragment> -->
+								</IconTabFilter>
+								
+								<IconTabFilter text="FragementDiaolg" icon="sap-icon://world">
+									<Button text="open Hello Dialog" press="onOpenDialog" id="helloDiaolg"></Button>
+									
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+				</content>
+			  	<footer>
+					<Toolbar   active="true" >
+						<content>
+						<ToolbarSpacer/>
+					
+						<Button text="Approve" type="Accept" press="onApproved" id="idApr"></Button>
+						<Button text="Dis-Approved" type="Reject"  ></Button>
+						</content>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
